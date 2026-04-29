@@ -1,0 +1,12 @@
+# Normalize line endings by default
+* text=auto
+
+# PowerShell scripts: keep CRLF on Windows
+*.ps1  text eol=crlf
+*.psd1 text eol=crlf
+*.psm1 text eol=crlf
+
+# Markdown and data files: keep LF for stable cross-platform diffs and fixture hashes
+*.md   text eol=lf
+*.json text eol=lf
+*.csv  text eol=lf

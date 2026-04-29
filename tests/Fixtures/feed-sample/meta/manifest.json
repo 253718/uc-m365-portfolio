@@ -1,0 +1,41 @@
+{
+  "contractVersion": "1.0.0",
+  "runId": "fixture-001",
+  "files": [
+    {
+      "path": "meta/run.json",
+      "size": 268,
+      "sha256": "B8EF2FF7AC121AB8CD6DA083ECEDA3851B1E9B0702C285607AF8FD751B466618"
+    },
+    {
+      "path": "exports/tenant-teamsphone-config.json",
+      "size": 2272,
+      "sha256": "8717A23A8434E0719DA1E2D9BF1E7362515D5C56B6E937ED7F7EB12391599B41"
+    },
+    {
+      "path": "exports/tenant-teamsphone-callflows.json",
+      "size": 2245,
+      "sha256": "A5A0B8902EB6FC868184DBEC2B5638CAB41A9F634685E899F9146893FC68E6C5"
+    },
+    {
+      "path": "inventory/teamsphone-inventory.csv",
+      "size": 506,
+      "sha256": "5BB39B43B1C470EB6D70EB330049BB9ACFB54D34E5DEE62D04B19DB3E9619BED"
+    },
+    {
+      "path": "inventory/teamsphone-inventory.json",
+      "size": 1345,
+      "sha256": "2C0F1CC5C62B1CAF0B88996D8BCF912328E15A831313E31618B42E87A9B7EF31"
+    },
+    {
+      "path": "validation/feed-quality.json",
+      "size": 221,
+      "sha256": "4D8C9C8BC8832CA1CC96B352B0887AEC0F059EEB494E1B2EB9CE253F3526D67D"
+    },
+    {
+      "path": "meta/manifest.json",
+      "size": 1189,
+      "sha256": "SELF-REFERENCE-NOT-VALIDATED-BY-CONSUMER"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+# =========================
+# UC M365 Portfolio (public consumer / presenter)
+# =========================
+
+# Runtime outputs
+out/
+artifacts/
+results/
+transcripts/
+TestResults/
+
+# Archives generated locally
+*.zip
+*.tar
+*.gz
+
+# Local logs / traces / scratch
+*.log
+*.trace
+*.etl
+*.evtx
+*.tmp
+
+# PowerShell local state
+*.clixml
+*.ps1xml
+*.pssc
+*.psrc
+*.psd1.user
+*.user
+
+# Editor / OS
+.vscode/
+*.code-workspace
+.DS_Store
+Thumbs.db
+
+# Node / Python / misc
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+
+# Keep committed sanitized fixtures and documentation assets
+!data/
+!data/**
+!docs/sample-outputs/
+!docs/sample-outputs/**
+!tests/Fixtures/
+!tests/Fixtures/**

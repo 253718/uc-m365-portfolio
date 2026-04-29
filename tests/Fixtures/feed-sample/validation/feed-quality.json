@@ -1,0 +1,11 @@
+{
+  "status": "OK",
+  "checkedAtUtc": "2026-04-26T08:00:00Z",
+  "rowCount": 6,
+  "invalidRows": 0,
+  "anomalies": {
+    "EligibleNotVoiceEnabled": 0,
+    "HasNumberNotVoiceEnabled": 0,
+    "VoiceEnabledNoNumber": 0
+  }
+}

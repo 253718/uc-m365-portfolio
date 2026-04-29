@@ -1,0 +1,7 @@
+DisplayName,UserPrincipalName,PhoneNumber,VoiceEnabled,VoiceLicenseSku,VoiceServicePlan
+Claire Martin,claire.martin@contoso.lab,+33155551001,True,SPE_E5,MCOEV
+Julien Robert,julien.robert@contoso.lab,+33155551002,True,SPE_E5,MCOEV
+Sofia Rossi,sofia.rossi@contoso.lab,+37799991001,True,SPE_E5,MCOEV
+Marco Bianchi,marco.bianchi@contoso.lab,+37799991002,True,SPE_E5,MCOEV
+Elena Moretti,elena.moretti@contoso.lab,+37799991003,True,SPE_E5,MCOEV
+Nina Caruso,nina.caruso@contoso.lab,+37799991010,True,SPE_E5,MCOEV

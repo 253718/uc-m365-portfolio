@@ -1,0 +1,12 @@
+{
+  "contractVersion": "1.0.0",
+  "domain": "TeamsPhone",
+  "runId": "fixture-001",
+  "sourceRepo": "uc-m365-ops-feed",
+  "mode": "ReadOnly",
+  "generatedAtUtc": "2026-04-26T08:00:00Z",
+  "producer": {
+    "tool": "Invoke-TeamsPhoneFeed",
+    "version": "1.0.0"
+  }
+}

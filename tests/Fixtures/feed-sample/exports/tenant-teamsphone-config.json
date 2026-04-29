@@ -1,0 +1,102 @@
+{
+  "Timestamp": "2026-04-26T08:00:00",
+  "DialPlans": [
+    {
+      "Identity": "DP-FR-Users",
+      "Description": "France users normalization",
+      "NormalizationRules": [
+        {
+          "Identity": "NR-FR-National",
+          "Pattern": "^0(\\d{9})$",
+          "Translation": "+33$1"
+        },
+        {
+          "Identity": "NR-Intl-00",
+          "Pattern": "^00(\\d+)$",
+          "Translation": "+$1"
+        }
+      ]
+    },
+    {
+      "Identity": "DP-MC-Users",
+      "Description": "Monaco users normalization",
+      "NormalizationRules": [
+        {
+          "Identity": "NR-MC-Local",
+          "Pattern": "^(\\d{8})$",
+          "Translation": "+377$1"
+        },
+        {
+          "Identity": "NR-FR-Mobile",
+          "Pattern": "^0([67]\\d{8})$",
+          "Translation": "+33$1"
+        },
+        {
+          "Identity": "NR-Intl-00",
+          "Pattern": "^00(\\d+)$",
+          "Translation": "+$1"
+        }
+      ]
+    }
+  ],
+  "DirectRouting": {
+    "Gateways": [
+      {
+        "Identity": "SBC-FR-01",
+        "Fqdn": "sbc-fr01.contoso.lab",
+        "SipSignalingPort": 5061,
+        "Enabled": true
+      },
+      {
+        "Identity": "SBC-MC-01",
+        "Fqdn": "sbc-mc01.contoso.lab",
+        "SipSignalingPort": 5061,
+        "Enabled": true
+      }
+    ],
+    "VoiceRoutes": [
+      {
+        "Identity": "VR-FR-Default",
+        "NumberPattern": "^\\+33\\d+$",
+        "OnlinePstnUsages": [
+          "FR-Default"
+        ],
+        "OnlinePstnGatewayList": [
+          "SBC-FR-01"
+        ],
+        "Priority": 0
+      },
+      {
+        "Identity": "VR-MC-Default",
+        "NumberPattern": "^\\+377\\d+$",
+        "OnlinePstnUsages": [
+          "MC-Default"
+        ],
+        "OnlinePstnGatewayList": [
+          "SBC-MC-01"
+        ],
+        "Priority": 0
+      }
+    ],
+    "VoiceRoutingPolicies": [
+      {
+        "Identity": "VRP-FR-Users",
+        "OnlinePstnUsages": [
+          "FR-Default"
+        ],
+        "Description": "France population routing"
+      },
+      {
+        "Identity": "VRP-MC-Users",
+        "OnlinePstnUsages": [
+          "MC-Default"
+        ],
+        "Description": "Monaco population routing"
+      }
+    ],
+    "PstnUsages": [
+      "FR-Default",
+      "MC-Default"
+    ]
+  }
+}

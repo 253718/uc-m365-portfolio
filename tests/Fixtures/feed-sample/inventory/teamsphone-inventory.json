@@ -1,0 +1,50 @@
+[
+  {
+    "DisplayName": "Claire Martin",
+    "UserPrincipalName": "claire.martin@contoso.lab",
+    "PhoneNumber": "+33155551001",
+    "VoiceEnabled": true,
+    "VoiceLicenseSku": "SPE_E5",
+    "VoiceServicePlan": "MCOEV"
+  },
+  {
+    "DisplayName": "Julien Robert",
+    "UserPrincipalName": "julien.robert@contoso.lab",
+    "PhoneNumber": "+33155551002",
+    "VoiceEnabled": true,
+    "VoiceLicenseSku": "SPE_E5",
+    "VoiceServicePlan": "MCOEV"
+  },
+  {
+    "DisplayName": "Sofia Rossi",
+    "UserPrincipalName": "sofia.rossi@contoso.lab",
+    "PhoneNumber": "+37799991001",
+    "VoiceEnabled": true,
+    "VoiceLicenseSku": "SPE_E5",
+    "VoiceServicePlan": "MCOEV"
+  },
+  {
+    "DisplayName": "Marco Bianchi",
+    "UserPrincipalName": "marco.bianchi@contoso.lab",
+    "PhoneNumber": "+37799991002",
+    "VoiceEnabled": true,
+    "VoiceLicenseSku": "SPE_E5",
+    "VoiceServicePlan": "MCOEV"
+  },
+  {
+    "DisplayName": "Elena Moretti",
+    "UserPrincipalName": "elena.moretti@contoso.lab",
+    "PhoneNumber": "+37799991003",
+    "VoiceEnabled": true,
+    "VoiceLicenseSku": "SPE_E5",
+    "VoiceServicePlan": "MCOEV"
+  },
+  {
+    "DisplayName": "Nina Caruso",
+    "UserPrincipalName": "nina.caruso@contoso.lab",
+    "PhoneNumber": "+37799991010",
+    "VoiceEnabled": true,
+    "VoiceLicenseSku": "SPE_E5",
+    "VoiceServicePlan": "MCOEV"
+  }
+]

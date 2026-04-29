@@ -1,0 +1,79 @@
+{
+  "Timestamp": "2026-04-26T08:00:00",
+  "AutoAttendants": [
+    {
+      "Name": "Phone - AA - France Offices",
+      "Identity": "aa_fr_offices"
+    },
+    {
+      "Name": "Phone - AA - France to Monaco Services",
+      "Identity": "aa_fr_to_mc_services"
+    },
+    {
+      "Name": "Phone - AA - Monaco Reception",
+      "Identity": "aa_mc_reception"
+    }
+  ],
+  "CallQueues": [
+    {
+      "Name": "Phone - CQ - France Desk",
+      "Identity": "cq_fr_desk"
+    },
+    {
+      "Name": "Phone - CQ - Monaco Service 1",
+      "Identity": "cq_mc_service_1"
+    },
+    {
+      "Name": "Phone - CQ - Monaco Service 2",
+      "Identity": "cq_mc_service_2"
+    },
+    {
+      "Name": "Phone - CQ - Monaco Service 3",
+      "Identity": "cq_mc_service_3"
+    }
+  ],
+  "ResourceAccountsCompact": [
+    {
+      "DisplayName": "Phone - AA - France Offices",
+      "PhoneNumber": "+33155550100",
+      "UserPrincipalName": "phone_aa_fr_offices@contoso.lab",
+      "ApplicationId": "app-aa-fr-offices"
+    },
+    {
+      "DisplayName": "Phone - AA - France to Monaco Services",
+      "PhoneNumber": "+33155550110",
+      "UserPrincipalName": "phone_aa_fr_to_mc_services@contoso.lab",
+      "ApplicationId": "app-aa-fr-to-mc-services"
+    },
+    {
+      "DisplayName": "Phone - AA - Monaco Reception",
+      "PhoneNumber": "+37799990100",
+      "UserPrincipalName": "phone_aa_mc_reception@contoso.lab",
+      "ApplicationId": "app-aa-mc-reception"
+    },
+    {
+      "DisplayName": "Phone - CQ - France Desk",
+      "PhoneNumber": null,
+      "UserPrincipalName": "phone_cq_fr_desk@contoso.lab",
+      "ApplicationId": "app-cq-fr-desk"
+    },
+    {
+      "DisplayName": "Phone - CQ - Monaco Service 1",
+      "PhoneNumber": null,
+      "UserPrincipalName": "phone_cq_mc_service_1@contoso.lab",
+      "ApplicationId": "app-cq-mc-service-1"
+    },
+    {
+      "DisplayName": "Phone - CQ - Monaco Service 2",
+      "PhoneNumber": null,
+      "UserPrincipalName": "phone_cq_mc_service_2@contoso.lab",
+      "ApplicationId": "app-cq-mc-service-2"
+    },
+    {
+      "DisplayName": "Phone - CQ - Monaco Service 3",
+      "PhoneNumber": null,
+      "UserPrincipalName": "phone_cq_mc_service_3@contoso.lab",
+      "ApplicationId": "app-cq-mc-service-3"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+name: PowerShell CI
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+    defaults:
+      run:
+        shell: pwsh
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install PowerShell modules
+        run: |
+          Set-PSRepository PSGallery -InstallationPolicy Trusted
+          Install-Module PSScriptAnalyzer -Scope CurrentUser -Force -MinimumVersion 1.22.0
+          Install-Module Pester -Scope CurrentUser -Force -MinimumVersion 5.5.0
+
+      - name: Install markdownlint
+        run: npm install -g markdownlint-cli
+
+      - name: PSScriptAnalyzer (strict)
+        run: |
+          $settings = Join-Path $PWD 'tooling/PSScriptAnalyzerSettings.psd1'
+          Invoke-ScriptAnalyzer -Path $PWD -Recurse -Settings $settings -EnableExit
+
+      - name: markdownlint
+        run: markdownlint "**/*.md"
+
+      - name: Read-only guardrail
+        run: ./tooling/Verify-ReadOnly.ps1 -Root . -FailOnMatch
+
+      - name: Validate bundled feed fixture
+        run: ./tooling/Validate-FeedContract.ps1 -FeedPath ./tests/Fixtures/feed-sample
+
+      - name: Pester test suite
+        run: ./tooling/Invoke-RepoTests.ps1
