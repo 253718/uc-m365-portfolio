@@ -8,6 +8,15 @@ The current primary path is feed-driven and focuses on Teams Phone / Direct Rout
 
 Supporting docs, templates, and case studies illustrate the broader delivery approach around review, traceability, and handover, without claiming to be a full architecture dossier.
 
+## Reviewer path
+
+If you have 5 minutes:
+
+- Start with `docs/case-studies/france-monaco-dual-operator.md`
+- Then review `docs/output-contract.md`
+- Then open the generated outputs listed in the Quick start section
+- For architecture context, see `docs/portfolio.md`
+
 ## What this repository demonstrates
 
 - Teams Voice / Direct Routing delivery thinking beyond simple administration
