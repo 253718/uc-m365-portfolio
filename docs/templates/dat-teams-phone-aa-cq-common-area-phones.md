@@ -13,6 +13,7 @@ In scope:
 - Resource Accounts for service objects
 - shared endpoint / Common Area Phone accounts
 - physical Teams phone mapping
+- minimal Common Area Phone interface through Teams IP Phone Policy
 - timeout, overflow and closed-hours behavior
 - acceptance tests and RUN handover notes
 
@@ -50,6 +51,7 @@ Inbound PSTN call
 - The public number represents the reception service, not an individual phone.
 - Auto Attendants and Call Queues use Resource Accounts.
 - Physical Teams phones use dedicated shared endpoint accounts.
+- Shared endpoint accounts receive a Teams IP Phone Policy configured with `SignInMode CommonAreaPhoneSignIn` to provide the minimal Common Area Phone interface on physical Teams phones.
 - Shared endpoint accounts are added as Call Queue agents.
 - Shared endpoint accounts do not receive direct public numbers by default.
 - Timeout, overflow and closed-hours behavior are explicit and tested.
@@ -109,6 +111,8 @@ Support must know:
 - Call Queue name and purpose
 - shared endpoint account list
 - phone-to-account mapping
+- Teams IP Phone Policy assigned to shared endpoint accounts
+- confirmation that the minimal Common Area Phone interface is expected on shared physical phones
 - timeout and overflow behavior
 - closed-hours and holiday behavior
 - outbound caller ID behavior, if enabled

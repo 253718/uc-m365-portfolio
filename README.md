@@ -23,6 +23,7 @@ If you have 5 minutes:
 - Feed-driven, read-only production of review and evidence artefacts
 - Traceability through staged input, manifests, and packaged outputs
 - Delivery discipline for environments where documentation quality, traceability, and handover-supporting outputs matter
+- Reusable DAT and DEX templates for Teams Phone architecture handover and RUN operations
 
 ## Repository roles
 
@@ -88,7 +89,15 @@ Start with:
 - `./out/evidence/teamsphone-evidence-demo001/SUMMARY.md`
 - `./out/evidence/teamsphone-evidence-demo001.zip`
 
-### 5. Repository checks
+### 5. Review reusable delivery templates
+
+Start with:
+
+- `./docs/templates/dat-teams-phone-as-built.md`
+- `./docs/templates/dex-teams-phone-run-operations.md`
+- `./docs/templates/runbook-catalog.md`
+
+### 6. Repository checks
 
 ```powershell
 ./tooling/Validate-FeedContract.ps1 -FeedPath ./tests/Fixtures/feed-sample
